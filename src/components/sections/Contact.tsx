@@ -113,22 +113,20 @@ export default function ContactModern() {
   };
 
   return (
-    <section id="contact" className="relative py-20 px-4 md:px-0 bg-gradient-to-b from-[#f8fafc] via-[#eaf0fa] to-white dark:from-[#1a223a] dark:via-[#232b4a] dark:to-[#10131a] border-t border-[color:var(--color-olive)]">
+    <section id="contact" className="relative py-20 px-2 sm:px-4 md:px-0 bg-gradient-to-b from-[#f8fafc] via-[#eaf0fa] to-white dark:from-[#1a223a] dark:via-[#232b4a] dark:to-[#10131a] border-t border-[color:var(--color-olive)]">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-1 bg-[color:var(--color-gold)] rounded-full mb-8" />
-      <div className="w-[50vw] mx-auto relative z-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#0034EF] via-[#384470] to-[#F0CC00]">Let's Work Together</h2>
-        <p className="text-center text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">Tell us about your project and we'll get back to you within 24 hours with a detailed proposal.</p>
-        
+      <div className="w-full max-w-[600px] mx-auto relative z-10">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#0034EF] via-[#384470] to-[#F0CC00]">Let's Work Together</h2>
+        <p className="text-center text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto text-base sm:text-lg">Tell us about your project and we'll get back to you within 24 hours with a detailed proposal.</p>
         {/* Main Form Container */}
-        <div className="bg-white/80 dark:bg-slate-800/80 rounded-2xl shadow-lg p-6 md:p-10 border border-[color:var(--color-olive)]">
-          {/* Contact Form */}
+        <div className="bg-white/80 dark:bg-slate-800/80 rounded-2xl shadow-lg p-4 sm:p-6 md:p-10 border border-[color:var(--color-olive)]">
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               {services.map((service) => (
                 <button
                   key={service.id}
                   type="button"
-                  className={`p-4 rounded-lg font-semibold shadow transition border border-[color:var(--color-primary)] focus:outline-none text-left ${
+                  className={`w-full p-4 rounded-lg font-semibold shadow transition border border-[color:var(--color-primary)] focus:outline-none text-left text-base sm:text-lg ${
                     selectedService.id === service.id
                       ? 'bg-gradient-to-r from-[color:var(--color-gold)] to-[color:var(--color-orange)] text-black'
                       : 'bg-white text-[color:var(--color-primary)] hover:bg-[color:var(--color-secondary)]/10'
@@ -145,21 +143,21 @@ export default function ContactModern() {
                     <span className="text-2xl">{service.icon}</span>
                     <div>
                       <p className="font-bold">{service.name}</p>
-                      <p className="text-sm opacity-80">{service.description}</p>
+                      <p className="text-xs sm:text-sm opacity-80">{service.description}</p>
                     </div>
                   </div>
                 </button>
               ))}
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <input
                 type="text"
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
                 placeholder="Your Name"
-                className="rounded-md border border-[color:var(--color-olive)] px-4 py-2"
+                className="rounded-md border border-[color:var(--color-olive)] px-4 py-2 w-full text-base"
                 required
                 disabled={status === 'loading' || isFormDisabled}
               />
@@ -169,20 +167,20 @@ export default function ContactModern() {
                 value={formData.email}
                 onChange={handleChange}
                 placeholder="Your Email"
-                className="rounded-md border border-[color:var(--color-olive)] px-4 py-2"
+                className="rounded-md border border-[color:var(--color-olive)] px-4 py-2 w-full text-base"
                 required
                 disabled={status === 'loading' || isFormDisabled}
               />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <input
                 type="text"
                 name="company"
                 value={formData.company}
                 onChange={handleChange}
                 placeholder="Company Name (Optional)"
-                className="rounded-md border border-[color:var(--color-olive)] px-4 py-2"
+                className="rounded-md border border-[color:var(--color-olive)] px-4 py-2 w-full text-base"
                 disabled={status === 'loading' || isFormDisabled}
               />
               <input
@@ -191,13 +189,13 @@ export default function ContactModern() {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="Phone Number (Optional)"
-                className="rounded-md border border-[color:var(--color-olive)] px-4 py-2"
+                className="rounded-md border border-[color:var(--color-olive)] px-4 py-2 w-full text-base"
                 disabled={status === 'loading' || isFormDisabled}
               />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <div className="w-full">
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Budget</label>
                 <div className="relative flex items-center">
                   <select
@@ -220,7 +218,7 @@ export default function ContactModern() {
                     value={formData.budget}
                     onChange={handleChange}
                     placeholder="Enter amount"
-                    className="w-full rounded-md border border-[color:var(--color-olive)] px-4 py-2 pl-20 bg-white dark:bg-slate-800"
+                    className="w-full rounded-md border border-[color:var(--color-olive)] px-4 py-2 pl-20 bg-white dark:bg-slate-800 text-base"
                     required
                     min="0"
                     step="100"
@@ -232,13 +230,13 @@ export default function ContactModern() {
                 </p>
               </div>
 
-              <div>
+              <div className="w-full">
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Timeline</label>
                 <select
                   name="timeframe"
                   value={formData.timeframe}
                   onChange={handleChange}
-                  className="w-full rounded-md border border-[color:var(--color-olive)] px-4 py-2 bg-white dark:bg-slate-800"
+                  className="w-full rounded-md border border-[color:var(--color-olive)] px-4 py-2 bg-white dark:bg-slate-800 text-base"
                   required
                   disabled={status === 'loading' || isFormDisabled}
                 >
@@ -255,7 +253,7 @@ export default function ContactModern() {
               value={formData.message}
               onChange={handleChange}
               placeholder="Tell us about your project, goals, and any specific requirements..."
-              className="rounded-md border border-[color:var(--color-olive)] px-4 py-2 min-h-[120px]"
+              className="rounded-md border border-[color:var(--color-olive)] px-4 py-2 min-h-[120px] w-full text-base"
               required
               disabled={status === 'loading' || isFormDisabled}
             />
@@ -263,7 +261,7 @@ export default function ContactModern() {
             <button
               type="submit"
               disabled={status === 'loading' || isFormDisabled}
-              className={`bg-gradient-to-r from-[color:var(--color-gold)] to-[color:var(--color-orange)] text-black mt-2 px-6 py-3 rounded-lg font-semibold shadow-none hover:from-[color:var(--color-orange)] hover:to-[color:var(--color-gold)] transition flex items-center justify-center gap-2 ${
+              className={`w-full bg-gradient-to-r from-[color:var(--color-gold)] to-[color:var(--color-orange)] text-black mt-2 px-6 py-3 rounded-lg font-semibold shadow-none hover:from-[color:var(--color-orange)] hover:to-[color:var(--color-gold)] transition flex items-center justify-center gap-2 ${
                 (status === 'loading' || isFormDisabled) ? 'opacity-50 cursor-not-allowed' : ''
               }`}
             >
@@ -303,19 +301,19 @@ export default function ContactModern() {
         </div>
 
         {/* Contact Info - Now below the form */}
-        <div className="mt-10 bg-white/80 dark:bg-slate-800/80 rounded-2xl shadow-lg p-6 md:p-10 border border-[color:var(--color-olive)]">
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-            <div className="text-center md:text-left">
+        <div className="mt-8 bg-white/80 dark:bg-slate-800/80 rounded-2xl shadow-lg p-4 sm:p-6 md:p-10 border border-[color:var(--color-olive)]">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-8">
+            <div className="text-center sm:text-left w-full sm:w-auto">
               <p className="font-semibold text-[color:var(--color-secondary)]">Email</p>
-              <a href="mailto:info@fazilabs.com" className="text-[color:var(--color-primary)] font-semibold">info@fazilabs.com</a>
+              <a href="mailto:info@fazilabs.com" className="text-[color:var(--color-primary)] font-semibold break-all">info@fazilabs.com</a>
             </div>
-            <div className="text-center md:text-left">
+            <div className="text-center sm:text-left w-full sm:w-auto">
               <p className="font-semibold text-[color:var(--color-secondary)]">Phone</p>
               <a href="tel:+254706134387" className="text-[color:var(--color-primary)] font-semibold">+254706134387</a>
             </div>
-            <div className="text-center md:text-left">
+            <div className="text-center sm:text-left w-full sm:w-auto">
               <p className="font-semibold text-[color:var(--color-secondary)] mb-2">Connect with me</p>
-              <div className="flex gap-4 justify-center md:justify-start">
+              <div className="flex gap-4 justify-center sm:justify-start">
                 {socials.map((s) => (
                   <a key={s.name} href={s.url} target="_blank" rel="noopener noreferrer" className="hover:opacity-80">
                     <img src={s.icon} alt={s.name} className="w-7 h-7" />
