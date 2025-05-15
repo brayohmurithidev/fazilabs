@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fazilabs.com/sitemap.xml
+
+# Disallow admin and private routes
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/ 
