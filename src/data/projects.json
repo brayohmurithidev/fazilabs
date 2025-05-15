@@ -2,51 +2,75 @@
   "projects": [
     {
       "id": 1,
-      "slug": "custom-dashboard-app",
-      "title": "Custom Dashboard App",
-      "description": "A modern analytics dashboard built with React, Node.js, and Chart.js for real-time business insights.",
+      "slug": "client-1b3v",
+      "title": "Client Dashboard",
+      "description": "A modern client dashboard application featuring real-time data visualization, user authentication, and responsive design. Built with React and deployed on Vercel for optimal performance.",
       "type": "Custom",
-      "techStack": ["React", "Node.js", "Chart.js", "Tailwind CSS"],
+      "techStack": ["React", "Vercel", "Tailwind CSS", "TypeScript", "Chart.js"],
       "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&auto=format&fit=crop&q=60",
-      "url": "https://dashboard.fazilabs.com",
+      "url": "https://client-1b3v.vercel.app/",
+      "featured": true,
+      "date": "2024-04-15"
+    },
+    {
+      "id": 2,
+      "slug": "jenga-events",
+      "title": "Jenga Events",
+      "description": "An event management system for organizing and tracking events.",
+      "type": "Custom",
+      "techStack": ["React", "Node.js", "MongoDB"],
+      "image": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&auto=format&fit=crop&q=60",
+      "url": "https://github.com/brayohmurithidev/jengaEvents",
       "featured": true,
       "date": "2024-04-10"
     },
     {
       "id": 3,
-      "slug": "ecommerce-platform",
-      "title": "E-commerce Platform",
-      "description": "A scalable e-commerce platform with Stripe integration, product management, and order tracking.",
+      "slug": "sacco-management",
+      "title": "Sacco Management System",
+      "description": "A comprehensive management system for SACCO operations and member services.",
       "type": "Custom",
-      "techStack": ["Next.js", "Stripe", "MongoDB", "Tailwind CSS"],
-      "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=800&auto=format&fit=crop&q=60",
-      "url": "https://shop.fazilabs.com",
-      "featured": false,
-      "date": "2024-02-15"
+      "techStack": ["React", "Node.js", "MongoDB"],
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+      "url": "https://github.com/brayohmurithidev/sacco-management-system",
+      "featured": true,
+      "date": "2024-04-05"
+    },
+    {
+      "id": 4,
+      "slug": "faziwatches",
+      "title": "FaziWatches E-Store",
+      "description": "An e-commerce platform for luxury watches with modern UI and secure checkout.",
+      "type": "Custom",
+      "techStack": ["React", "Node.js", "MongoDB", "Stripe"],
+      "image": "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800&auto=format&fit=crop&q=60",
+      "url": "https://github.com/brayohmurithidev/faziwatches-e-store",
+      "featured": true,
+      "date": "2024-04-01"
     },
     {
       "id": 5,
-      "slug": "triohub-women",
-      "title": "Trio Hub Women Organization",
-      "description": "A community-focused WordPress site for Trio Hub Women Organization, empowering girls and women in Marsabit, Kenya.",
-      "type": "WordPress",
-      "techStack": ["WordPress", "PHP", "Elementor"],
-      "image": "/images/triohubwomen.png",
-      "url": "https://triohubwomen.org/",
+      "slug": "store-inventory",
+      "title": "Store Inventory System",
+      "description": "A comprehensive inventory management system for tracking products and supplies.",
+      "type": "Custom",
+      "techStack": ["React", "Node.js", "MongoDB", "Docker"],
+      "image": "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&auto=format&fit=crop&q=60",
+      "url": "https://github.com/brayohmurithidev/store_inventory",
       "featured": false,
-      "date": "2023-04-01"
+      "date": "2024-03-25"
     },
     {
       "id": 6,
-      "slug": "celebrating-our-stories",
-      "title": "Celebrating Our Stories",
-      "description": "A storytelling platform built on WordPress, helping people share life experiences and insights.",
-      "type": "WordPress",
-      "techStack": ["WordPress", "PHP", "Elementor"],
-      "image": "/images/celebrating-our-stories.png",
-      "url": "https://celebratingourstories.com/",
-      "featured": false,
-      "date": "2024-07-23"
+      "slug": "charity-food",
+      "title": "Charity Food App",
+      "description": "A platform connecting food donors with food banks and recipients to reduce food waste.",
+      "type": "Custom",
+      "techStack": ["React", "Python", "Flask", "MySQL"],
+      "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&auto=format&fit=crop&q=60",
+      "url": "https://github.com/brayohmurithidev/charity-food",
+      "featured": true,
+      "date": "2024-03-20"
     },
     {
       "id": 7,
@@ -87,6 +111,6 @@
   ],
   "types": ["All", "Custom", "WordPress"],
   "techStacks": [
-    "React", "Node.js", "Chart.js", "Tailwind CSS", "WordPress", "PHP", "Elementor", "Yoast SEO", "Next.js", "Stripe", "MongoDB", "ACF", "Sass"
+    "React", "Node.js", "MongoDB", "Python", "Flask", "MySQL", "Docker", "Stripe", "Tailwind CSS", "Vercel", "WordPress", "PHP", "Elementor", "Yoast SEO", "Next.js", "ACF", "Sass", "TypeScript", "Chart.js"
   ]
 } 
