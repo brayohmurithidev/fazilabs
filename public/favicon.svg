@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fazilabs-favicon-gradient" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0034EF"/>
+      <stop offset="0.5" stop-color="#384470"/>
+      <stop offset="1" stop-color="#F0CC00"/>
+    </linearGradient>
+  </defs>
+  <circle cx="24" cy="24" r="22" fill="url(#fazilabs-favicon-gradient)" stroke="#F0CC00" stroke-width="2"/>
+  <path d="M16 32V16h12c4 0 6 2 6 5s-2 5-6 5h-8v6" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="38" cy="12" r="3" fill="#F09400"/>
+  <path d="M38 6v3M38 21v-3M44 12h-3M32 12h-3M42.12 8.88l-2.12 2.12M33.88 15.12l2.12-2.12" stroke="#F0CC00" stroke-width="1.2" stroke-linecap="round"/>
+</svg> 

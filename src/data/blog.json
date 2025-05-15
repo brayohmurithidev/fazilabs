@@ -1,0 +1,92 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "slug": "getting-started-with-react",
+      "title": "Getting Started with React",
+      "excerpt": "Learn the fundamentals of React and how to build your first application. From components to hooks, we'll cover everything you need to know to start your React journey.",
+      "content": "<p>React has revolutionized the way we build user interfaces. In this comprehensive guide, we'll explore the fundamentals of React and how to get started with your first application.</p><h2>Why React?</h2><p>React's component-based architecture makes it easy to build reusable UI components. Its virtual DOM implementation ensures optimal performance, while its declarative approach makes your code more predictable and easier to debug.</p>",
+      "date": "2024-03-15",
+      "readTime": "5 min read",
+      "category": "Development",
+      "image": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop&q=60",
+      "author": {
+        "name": "Brian Murithi",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop&q=60",
+        "role": "Lead Developer"
+      }
+    },
+    {
+      "id": 2,
+      "slug": "mastering-tailwind-css",
+      "title": "Mastering Tailwind CSS",
+      "excerpt": "A comprehensive guide to using Tailwind CSS for modern web development. Learn how to create beautiful, responsive designs with utility-first CSS.",
+      "content": "<p>Tailwind CSS has changed the way we think about styling web applications. In this guide, we'll explore how to leverage its utility-first approach to create beautiful, responsive designs.</p><h2>Why Tailwind?</h2><p>Tailwind's utility-first approach allows for rapid development and consistent design. Its responsive design utilities make it easy to create mobile-first layouts.</p>",
+      "date": "2024-03-10",
+      "readTime": "8 min read",
+      "category": "CSS",
+      "image": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800&auto=format&fit=crop&q=60",
+      "author": {
+        "name": "Brian Murithi",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop&q=60",
+        "role": "Lead Developer"
+      }
+    },
+    {
+      "id": 3,
+      "slug": "nextjs-vs-react",
+      "title": "Next.js vs React: Which One Should You Choose?",
+      "excerpt": "A detailed comparison between Next.js and React. Understand the differences, use cases, and make an informed decision for your next project.",
+      "content": "<p>Choosing between Next.js and React can be challenging. In this article, we'll break down the key differences and help you make the right choice for your project.</p><h2>Key Differences</h2><p>Next.js provides additional features like server-side rendering and static site generation, while React focuses on building user interfaces.</p>",
+      "date": "2024-03-05",
+      "readTime": "6 min read",
+      "category": "Development",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=60",
+      "author": {
+        "name": "Brian Murithi",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop&q=60",
+        "role": "Lead Developer"
+      }
+    },
+    {
+      "id": 4,
+      "slug": "typescript-best-practices",
+      "title": "TypeScript Best Practices for 2024",
+      "excerpt": "Learn the latest TypeScript best practices and patterns that will help you write more maintainable and type-safe code.",
+      "content": "<p>TypeScript continues to evolve, and with it, our best practices. In this article, we'll explore the latest patterns and practices for writing type-safe code.</p><h2>Type Safety</h2><p>Understanding TypeScript's type system is crucial for writing maintainable code. We'll cover advanced types and type inference.</p>",
+      "date": "2024-03-01",
+      "readTime": "7 min read",
+      "category": "Development",
+      "image": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&auto=format&fit=crop&q=60",
+      "author": {
+        "name": "Brian Murithi",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop&q=60",
+        "role": "Lead Developer"
+      }
+    },
+    {
+      "id": 5,
+      "slug": "modern-css-techniques",
+      "title": "Modern CSS Techniques You Should Know",
+      "excerpt": "Explore modern CSS techniques including Grid, Flexbox, and CSS Custom Properties. Learn how to create responsive and maintainable layouts.",
+      "content": "<p>CSS has evolved significantly in recent years. In this guide, we'll explore modern techniques that will help you create better layouts and more maintainable styles.</p><h2>CSS Grid</h2><p>CSS Grid has revolutionized how we create layouts. We'll cover basic and advanced grid patterns.</p>",
+      "date": "2024-02-25",
+      "readTime": "9 min read",
+      "category": "CSS",
+      "image": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800&auto=format&fit=crop&q=60",
+      "author": {
+        "name": "Brian Murithi",
+        "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&auto=format&fit=crop&q=60",
+        "role": "Lead Developer"
+      }
+    }
+  ],
+  "categories": [
+    "All",
+    "Development",
+    "CSS",
+    "JavaScript",
+    "Web Design"
+  ],
+  "featuredPosts": [1, 2, 3]
+} 
