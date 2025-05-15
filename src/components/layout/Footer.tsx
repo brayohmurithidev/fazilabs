@@ -37,7 +37,7 @@ export default function Footer() {
             <img
               src="/images/logo-fazilabs.svg"
               alt="Fazilabs logo"
-              className="w-[48px] md:w-[100px] h-auto min-w-[40px] max-w-[160px] object-contain drop-shadow-sm"
+              className="w-[100px] md:w-[100px] h-auto min-w-[40px] max-w-[160px] object-contain drop-shadow-sm"
               loading="lazy"
               draggable="false"
               style={{ display: 'block' }}

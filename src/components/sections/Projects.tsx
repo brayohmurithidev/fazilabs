@@ -21,14 +21,26 @@ const cardVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-export default function ProjectsShowcase() {
+export default function Projects() {
   const [tab, setTab] = useState<'custom' | 'wp'>('custom');
   const projects = tab === 'custom' ? projectsData.projects.filter(p => p.type === 'Custom').slice(0, 3) : projectsData.projects.filter(p => p.type === 'WordPress').slice(0, 3);
 
   return (
-    <section id="project" className="bg-gradient-to-b from-[#f8fafc] via-[#eaf0fa] to-white dark:from-[#1a223a] dark:via-[#232b4a] dark:to-[#10131a] py-16 px-4 md:px-0">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 text-transparent bg-clip-text bg-gradient-to-r from-[#0034EF] via-[#384470] to-[#F0CC00]">Projects</h2>
+    <section id="projects" className="py-16 bg-gradient-to-b from-[#f8fafc] via-[#eaf0fa] to-white dark:from-[#1a223a] dark:via-[#232b4a] dark:to-[#10131a]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0034EF] via-[#384470] to-[#F0CC00] mb-4">
+            Featured Projects
+          </h2>
+          <p className="text-lg text-[#384470] max-w-2xl mx-auto">
+            Explore some of our recent work and success stories
+          </p>
+        </motion.div>
         <div className="flex justify-center mb-8">
           <div className="flex gap-2">
             <button

@@ -86,6 +86,16 @@ export default function ProjectsArchive() {
                     </div>
                     <h2 className="text-lg font-semibold text-[#384470] mb-1 truncate">{project.title}</h2>
                     <p className="text-[#706838] text-sm mb-2 line-clamp-2">{project.description}</p>
+                    <div className="flex flex-wrap gap-2 mb-2">
+                      {project.techStack.map((tech) => (
+                        <span
+                          key={tech}
+                          className="inline-block px-2 py-0.5 rounded bg-[#384470]/5 text-[#384470] text-xs"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                     <span className="text-xs text-[#0034EF]">{project.date}</span>
                   </div>
                 </a>

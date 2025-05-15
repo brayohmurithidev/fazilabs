@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Download } from 'lucide-react';
 
 export default function AboutMe() {
   return (
@@ -53,11 +54,12 @@ export default function AboutMe() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
-              href="/assets/BrianMurithiCV.pdf" // Replace with your actual CV path
+              href="/Brian-Murithi-resume.pdf"
               download
-              className="group relative px-8 py-4 rounded-xl font-semibold overflow-hidden text-lg bg-gradient-to-r from-[color:var(--color-gold)] to-[color:var(--color-orange)] text-black shadow-none hover:from-[color:var(--color-orange)] hover:to-[color:var(--color-gold)] transition"
+              className="group relative px-8 py-4 rounded-xl font-semibold overflow-hidden text-lg bg-gradient-to-r from-[color:var(--color-gold)] to-[color:var(--color-orange)] text-black shadow-none hover:from-[color:var(--color-orange)] hover:to-[color:var(--color-gold)] transition flex items-center justify-center gap-2"
             >
-              Download CV
+              <Download className="w-5 h-5" />
+              <span>Download CV</span>
             </a>
             <a
               href="#contact"

@@ -78,7 +78,7 @@ export const Testimonials = () => {
   const maxWidth = cardsPerView === 3 ? 'max-w-6xl' : cardsPerView === 2 ? 'max-w-3xl' : 'max-w-xl';
 
   return (
-    <section id="testimonials" className="py-20 bg-gradient-to-b from-[#f8fafc] via-[#eaf0fa] to-white dark:from-[#1a223a] dark:via-[#232b4a] dark:to-[#10131a]">
+    <section id="testimonials" className="py-16 bg-gradient-to-b from-[#f8fafc] via-[#eaf0fa] to-white dark:from-[#1a223a] dark:via-[#232b4a] dark:to-[#10131a]">
       <div className="container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
